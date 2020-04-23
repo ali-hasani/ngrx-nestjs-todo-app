@@ -1,0 +1,10 @@
+::ng-deep {
+
+    .mat-checkbox-layout {
+        margin-left: 10px !important;
+
+        .mat-checkbox-inner-container {
+            margin-right: 25px;
+        }
+    }
+}

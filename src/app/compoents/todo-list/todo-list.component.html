@@ -1,0 +1,8 @@
+<section class="main" *ngIf="($todos | async).list.length > 0">
+  <ul class="todo-list">
+    <li *ngFor="let todo of ($todos | async).list" [class.completed]="todo.complete">
+      <app-todo-list-item
+        [todo]="todo"></app-todo-list-item>
+    </li>
+  </ul>
+</section>

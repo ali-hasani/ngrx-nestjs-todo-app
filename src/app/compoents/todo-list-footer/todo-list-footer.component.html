@@ -1,0 +1,3 @@
+<footer class="footer" *ngIf="($todos | async).list.length > 0">
+  <span class="todo-count"><strong>{{($todos | async).list.length}}</strong> {{($todos | async).list.length == 1 ? 'item' : 'items'}} left</span>
+</footer>
